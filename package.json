@@ -1,10 +1,10 @@
 {
   "name": "dweb-dns-packet",
-  "version": "4.2.0",
+  "version": "1.0.0",
   "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
-  "author": "Mathias Buus",
+  "author": "Jared",
   "license": "MIT",
-  "repository": "mafintosh/dweb-dns-packet",
+  "repository": "distributedweb/dweb-dns-packet",
   "homepage": "https://github.com/distributedweb/dweb-dns-packet",
   "engines": {
     "node": ">=4"

@@ -1,18 +1,18 @@
-# dns-packet
+# dweb-dns-packet
 
-An [abstract-encoding](https://github.com/mafintosh/abstract-encoding) compliant module for encoding / decoding DNS packets.
-Lifted out of [multicast-dns](https://github.com/mafintosh/multicast-dns) as a separate module.
+An [abstract-encoding](https://github.com/distributedweb/abstract-encoding) compliant module for encoding / decoding DNS packets.
+Lifted out of [multicast-dns](https://github.com/distributedweb/multicast-dns) as a separate module.
 
 ```
-npm install dns-packet
+npm install dweb-dns-packet
 ```
 
-[![build status](https://travis-ci.org/mafintosh/dns-packet.svg?branch=master)](https://travis-ci.org/mafintosh/dns-packet)
+[![build status](https://travis-ci.org/mafintosh/dweb-dns-packet.svg?branch=master)](https://travis-ci.org/mafintosh/dweb-dns-packet)
 
 ## UDP Usage
 
 ``` js
-var packet = require('dns-packet')
+var packet = require('dweb-dns-packet')
 var dgram = require('dgram')
 
 var socket = dgram.createSocket('udp4')
@@ -39,7 +39,7 @@ Also see [the UDP example](examples/udp.js).
 
 ## TCP, TLS, HTTPS
 
-While DNS has traditionally been used over a datagram transport, it is increasingly being carried over TCP for larger responses commonly including DNSSEC responses and TLS or HTTPS for enhanced security. See below examples on how to use `dns-packet` to wrap DNS packets in these protocols:
+While DNS has traditionally been used over a datagram transport, it is increasingly being carried over TCP for larger responses commonly including DNSSEC responses and TLS or HTTPS for enhanced security. See below examples on how to use `dweb-dns-packet` to wrap DNS packets in these protocols:
 
 - [TCP](examples/tcp.js)
 - [DNS over TLS](examples/tls.js)
